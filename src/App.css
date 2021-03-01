@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* body {
+  font-family: "Noto Sans JP", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+* body main {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.75)));
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.75));
+  background-image: url("./assets/cold.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0 25px 25px 25px;
+  text-align: center;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
-.App-link {
-  color: #61dafb;
+* body main.main.hot {
+  background-image: url("./assets/hot.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+* body .search-container {
+  margin-bottom: 4rem;
+  width: 100%;
 }
+
+* body .search-container input {
+  max-width: 300px;
+  width: 100%;
+  padding: 15px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 0px 0px 8px 8px;
+  -webkit-box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 3px rgba(0, 0, 0, 0.2);
+  color: #313131;
+  font-size: 1.5rem;
+  font-weight: 400;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+* body .search-container input::-webkit-input-placeholder {
+  color: #313131;
+}
+
+* body .search-container input:-ms-input-placeholder {
+  color: #313131;
+}
+
+* body .search-container input::-ms-input-placeholder {
+  color: #313131;
+}
+
+* body .search-container input::placeholder {
+  color: #313131;
+}
+
+* body .search-container input:focus {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+* body .location-container span {
+  display: block;
+}
+
+* body .location-container .location {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 2px 2px rgba(50, 50, 50, 0.5);
+}
+
+* body .location-container .date {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 2px 2px rgba(50, 50, 50, 0.5);
+}
+
+* body .weather-container {
+  margin-top: 2rem;
+}
+
+* body .weather-container span.temp {
+  position: relative;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 8px;
+  padding: 15px 25px;
+  color: #fff;
+  font-size: 100px;
+  font-weight: 700;
+  text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
+  -webkit-box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+          box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+* body .weather-container .weather {
+  color: #fff;
+  margin-top: 1rem;
+  font-size: 50px;
+  font-weight: 700;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+* body .weather-container .description {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 400;
+  text-shadow: 3px 3px rgba(50, 50, 70, 0.5);
+}
+
+* body .error {
+  color: #e74141;
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+  text-shadow: 2px 2px rgba(50, 50, 50, 0.5);
+}
+/*# sourceMappingURL=app.css.map */
